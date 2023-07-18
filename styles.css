@@ -203,7 +203,7 @@ MENU BACKDROP
 }
 
 .nav__menu--open .nav__menu--backdrop {
-  visibility: hidden;
+  visibility: visible;
   opacity: 1;
   transform: translateX(0);
 }
@@ -220,7 +220,7 @@ MENU BACKDROP
   align-items: center;
 }
 
-.nav__menu__links {
+.nav__menu--link {
   margin-bottom: 16px;
 }
 
@@ -296,6 +296,7 @@ LANDING
   border: 2px solid rgb(160, 174, 192);
   padding: 20px;
   font-size: 20px;
+  outline: none;
 }
 
 .landing__form--input::placeholder {
@@ -1410,7 +1411,15 @@ MEDIA QUERY
   }
 
   .footer__links {
-    display: none;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  .footer__link {
+    width: calc(100% / 3);
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left;
   }
 
   .footer__divider {
